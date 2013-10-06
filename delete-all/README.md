@@ -1,8 +1,8 @@
 # Delete all
-Add to context menu option "delete all tasks".
+Adds "delete all" option to the context menu.
 
 # Overview
-By this script you can delete all tasks from cell thanks to only two clicks (right-click mouse on cell and click option
-"delete all tasks" in context menu).
+This script adds the "delete all" option to the cell context menu.
+Use with care as deleted tasks cannot be recovered.
 
 ![preview](preview.png)
