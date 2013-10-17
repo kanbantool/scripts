@@ -1,0 +1,50 @@
+@-webkit-keyframes rotate{
+    0% {-webkit-transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);}
+}
+
+@-webkit-keyframes skew{
+    0% {-webkit-transform: skew(0deg,0deg);}
+    50% {-webkit-transform: skew(-15deg,-15deg);}
+    100% {-webkit-transform: skew(0deg,0deg);}
+}
+
+@-webkit-keyframes shrink{
+    0% {-webkit-transform: scale(1,1);}
+    50% {-webkit-transform: scale(0.3,0.3);}
+    100% {-webkit-transform: scale(1,1);}
+}
+
+@-webkit-keyframes flip{
+    0% {-webkit-transform: scaleX(1);}
+    50% {-webkit-transform: scaleX(-1);}
+    100% {-webkit-transform: scaleX(1);}
+}
+
+@-webkit-keyframes enlarge{
+    0% {-webkit-transform: scale(1,1);}
+    50% {-webkit-transform: scale(0.6,1.7);}
+    100% {-webkit-transform: scale(1,1);}
+}
+
+@-webkit-keyframes fade{
+    0% {-webkit-transform: scale(1,1); opacity:1}
+    50% {-webkit-transform: scale(1.4,1.7); opacity:0.3}
+    100% {-webkit-transform: scale(1,1); opacity:1}
+}
+
+@-webkit-keyframes glow{
+    0% {box-shadow:0px 0px 0px #00a6ff}
+    50% {box-shadow:3px 3px 8px #00a6ff}
+    100% {box-shadow:0px 0px 0px #00a6ff}
+}
+
+
+/*cards*/
+.green.ui-sortable-helper{-webkit-animation: rotate 1.5s; }
+.blue.ui-sortable-helper{-webkit-animation: skew 1.5s; }
+.red.ui-sortable-helper{-webkit-animation: shrink 1.5s; }
+.orange.ui-sortable-helper{-webkit-animation: flip 1.5s; }
+.yellow.ui-sortable-helper{-webkit-animation: enlarge 1.5s; }
+.brown.ui-sortable-helper{-webkit-animation: fade 1.5s; }
+.white.ui-sortable-helper{-webkit-animation: glow 1.5s; }
