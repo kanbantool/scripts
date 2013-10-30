@@ -18,3 +18,4 @@ Name | Description | Configuration | `___ Copy links from this column ___`
 [Card tilt](card-tilt/) | More natural alignment of cards. | No configuration required. | [/scripts/card-tilt/card-tilt.js](http://kanbantool.com/scripts/card-tilt/card-tilt.js)
 [Delete all](delete-all/) | Adds delete all option to the context menu. | No configuration required. | [/scripts/delete-all/delete-all.js](http://kanbantool.com/scripts/delete-all/delete-all.js)
 [Sorting animations](sorting-animations) | Animates cards when they are being moved. | No configuration required. | [/scripts/sorting-animations/sorting-animations.css](http://kanbantool.com/scripts/sorting-animations/sorting-animations.css)
+[Fixed cards height](fixed-cards-height) | Makes all cards the same height. | No configuration required. | [/scripts/fixed-cards-height/medium-cards.css](http://kanbantool.com/scripts/fixed-cards-height/medium-cards.css)
