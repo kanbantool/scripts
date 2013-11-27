@@ -66,7 +66,7 @@ $ ->
     $('.navbar').toggleClass('navbar-inverse')
     $.cookie('high-contrast', $('body').hasClass('high-contrast'), { expires: 365 });
     false
-  $('#tools_menu ul').append( $('<li>').append(menuLink) )
+  $('#tools_menu >ul').append( $('<li>').append(menuLink) )
 
   # Check for remembered value inside the cookie
   menuLink.click() if $.cookie('high-contrast') == 'true'

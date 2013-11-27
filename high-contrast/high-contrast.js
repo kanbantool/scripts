@@ -12,7 +12,7 @@
       });
       return false;
     });
-    $('#tools_menu ul').append($('<li>').append(menuLink));
+    $('#tools_menu >ul').append($('<li>').append(menuLink));
     if ($.cookie('high-contrast') === 'true') return menuLink.click();
   });
 

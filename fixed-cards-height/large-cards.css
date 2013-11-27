@@ -1,0 +1,2 @@
+#board ul.task_list > li { height:73px; }
+#board ul.task_list > li div.task_name { height:48px; overflow:hidden; }
