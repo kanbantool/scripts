@@ -7,7 +7,7 @@
   last_ws = $(window.board.model.attributes.workflow_stages).last()[0].id;
 
   $(document).bind('card_open', function() {
-    $('#task_overlay_tab_view').find('.submit_pane .save_and_close').after('<span style="font-size: 1.2em"><input id="save_and_done" type="checkbox" value="0"> task is done</span>');
+    $('#task_overlay_tab_view').find('.submit_pane .save_and_close').after('<span style="font-size: 1.2em"><input id="save_and_done" type="checkbox" value="0"> task done</span>');
     return task_id = $('#task_overlay_tab_view').find('form.edit_task')[0].id.split('_')[2];
   });
 
