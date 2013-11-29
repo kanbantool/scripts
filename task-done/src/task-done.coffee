@@ -1,5 +1,5 @@
 board_id = window.board.model.id; last_ws = $(window.board.model.attributes.workflow_stages).last()[0].id;
-css = " .contextMenu li.task_done a { background-image: url(/scripts/task-done/done.png);} "
+css = " .contextMenu li.task_done a { background-image: url(https://rawgithub.com/kanbantool/scripts/master/task-done/done.png);} "
 
 if window.board.model.users.get(KanbanTool.Board.current_user_id).can('move_tasks', window.board.model)
   $('<style>').html(css).appendTo('head')
