@@ -8,6 +8,7 @@
 
     updateTask = function(task) {
         var $task;
+        task = task.model;
         $task = $('#task_' + task.attributes.id);
         if ($task) {
             if ($task.find('.working_time').length > 0) {
@@ -19,7 +20,7 @@
     };
 
     updateTasks = function() {
-        return $(window.board.model.tasks.models).each(function(i, task) {
+        return window.board.tasks.forEach(function(task) {
             return updateTask(task);
         });
     };
