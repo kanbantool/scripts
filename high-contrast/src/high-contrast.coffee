@@ -40,7 +40,7 @@ $ ->
         transition: all 0.5s ease;
         -webkit-transition: all 0.5s ease; }
       body.high-contrast.boards#show #content table#board td span.add_task a {
-        opacity: 0.3;
+        opacity: 1;
         border: none;
         transition: all 1s ease;
         -webkit-transition: all 0.5s ease; }
