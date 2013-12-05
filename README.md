@@ -22,3 +22,4 @@ Name | Description | Configuration | `___ Copy links from this column ___`
 [Save and done](save-done/) | Adds save and move to done option to task | No configuration required. | [/scripts/save-done/save-done.js](https://rawgithub.com/kanbantool/scripts/master/save-done/save-done.js)
 [Task done](task-done/) | Adds new option to the context menu | No configuration required. | [/scripts/task-done/task-done.js](https://rawgithub.com/kanbantool/scripts/master/task-done/task-done.js)
 [Change column](change-column/) | Adds change column option to context menu | No configuration required. | [/scripts/change-column/change-column.js](https://rawgithub.com/kanbantool/scripts/master/change-column/change-column.js)
+[Working time](working-time/) | Display time on front card from created date | No configuration required. | [/scripts/working-time/working-time.js](https://rawgithub.com/kanbantool/scripts/master/working-time/working-time.js)
