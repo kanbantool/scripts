@@ -6,7 +6,6 @@ css = "
 $('<style>').html(css).appendTo('head')
 
 customize = (event, tasks) =>
-  console.log(tasks)
   if $('#board').find('tr .svg_supported img:visible').length > 0
     swimlanes = []
     for task in tasks

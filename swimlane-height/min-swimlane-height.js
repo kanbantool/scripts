@@ -8,7 +8,6 @@
 
   customize = function(event, tasks) {
     var $row, height, swimlanes, task, _i, _len, _results;
-    console.log(tasks);
     if ($('#board').find('tr .svg_supported img:visible').length > 0) {
       swimlanes = [];
       _results = [];
