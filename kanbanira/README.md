@@ -46,10 +46,11 @@ Script for running require 3 options:
 
 
 All options in board description should look like as:
+
 ![preview3](preview3.png)
 
 # More information
 This script is based on Kanbanira extension for Chrome browser and usage is very similar but initialization is different,
 but you can see how work Kanbanira extension in demonstration video:
 
-![![Youtube](http://img.youtube.com/vi/oC8hdKmYbto/0.jpg)](http://www.youtube.com/watch?v=oC8hdKmYbto)
+[![Youtube](http://img.youtube.com/vi/oC8hdKmYbto/0.jpg)](http://www.youtube.com/watch?v=oC8hdKmYbto)
