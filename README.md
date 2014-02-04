@@ -24,3 +24,4 @@ Name | Description | Configuration | `___ Copy links from this column ___`
 [Change column](change-column/) | Adds change column option to context menu | No configuration required. | [/scripts/change-column/change-column.js](https://rawgithub.com/kanbantool/scripts/master/change-column/change-column.js)
 [Working time](working-time/) | Display time on front card from created date | No configuration required. | [/scripts/working-time/working-time.js](https://rawgithub.com/kanbantool/scripts/master/working-time/working-time.js)
 [Swimlane height](swimlane-height/) | Reduces minimal swimlane height | No configuration required. | [/scripts/swimlane-height/min-swimlane-height.js](https://raw.github.com/kanbantool/scripts/master/swimlane-height/min-swimlane-height.js)
+[Kanbanira](kanbanira/) | Basic integration with Jira | Needs add information about jira project | [/scripts/kanbanira/kanbanira.js](https://raw.github.com/kanbantool/scripts/master/kanbanira/kanbanira.js)
