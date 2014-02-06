@@ -2,22 +2,24 @@
 Fast script for basic integration with Jira.
 
 # Overview
-Kanbanira allows basic integration with Jira, and adds:
+Kanbanira allows for basic integration with Jira and adds the following:
+
 - hyperlink to Jira project on top menu
 
 ![preview](preview.png)
-- button for faster creating new issue in Jira to any task, if button was clicked form for create new issue in jira is opening in new window
+- A button in all tasks for faster creation of new issues in Jira (if button was clicked a form for creation of new issue in jira will open in new window)
 
 ![preview1](preview1.png)
-- button for faster view related issue in Jira, if button was clicked issue is opening in new window (required add to task name key issue in square brackets -> [DEMO-2])
+- A button for quick view of related issue in Jira (if button was clicked an issue will open in new window) Please note that this requires to add to task name key issue in square brackets -> [DEMO-2])
 
 ![preview2](preview2.png)
 
 # Installation
-For good script work all installation steps are required.
+All steps are required for this script to work properly.
 
-To board description must be add jira account link and project details. All options should be in square brackets with key and value -> [key=value].
-Script for running require 3 options:
+Jira account link and project details need to be added to board description in Kanban Tool. All attributes should be in square brackets with key and value -> [key=value]
+
+This script requires 3 attributes:
 
 - Jira account url
 
@@ -45,12 +47,12 @@ Script for running require 3 options:
   ![preview6](preview6.png)
 
 
-All options in board description should look like as:
+All attributes in board description should look like this:
 
 ![preview3](preview3.png)
 
 # More information
-This script is based on Kanbanira extension for Chrome browser and usage is very similar but initialization is different,
-but you can see how work Kanbanira extension in demonstration video:
+This script is based on Kanbanira extension for Chrome browser and usage is very similar but initialization is different.
+You can see how work Kanbanira extension in demonstration video:
 
 [![Youtube](http://img.youtube.com/vi/oC8hdKmYbto/0.jpg)](http://www.youtube.com/watch?v=oC8hdKmYbto)
