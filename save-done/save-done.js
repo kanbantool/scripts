@@ -7,8 +7,11 @@
   last_ws = $(window.board.model.attributes.workflow_stages).last()[0].id;
 
   $(document).bind('card_open', function() {
-    $('#task_overlay_tab_view').find('.submit_pane .save_and_close').after('<span style="font-size: 1.2em"><input id="save_and_done" type="checkbox" value="0"> task done</span>');
-    return task_id = $('#task_overlay_tab_view').find('form.edit_task')[0].id.split('_')[2];
+    var $overlay;
+    if (!($overlay = $('#task_overlay_tab_view')).parents('#overlay').hasClass('new')) {
+      $overlay.find('.submit_pane .save_and_close').after('<span style="font-size: 1.2em"><input id="save_and_done" type="checkbox" value="0"> task done</span>');
+      return task_id = $overlay.find('.edit_task')[0].id.split('_')[2];
+    }
   });
 
   $('body').on('click', '#task_overlay_tab_view .save, #task_overlay_tab_view .save_and_close', function() {
