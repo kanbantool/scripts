@@ -1,2 +1,2 @@
-#board ul.task_list > li { height:41px; }
-#board ul.task_list > li div.task_name { height:16px; overflow:hidden; }
+kt-task { min-height:41px; }
+

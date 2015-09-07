@@ -13,7 +13,5 @@ Name | Description | `___ Copy links from this column ___`
 [Medium cards](medium-cards.css) | Cards which can hold two lines of text. | [/scripts/fixed-cards-height/medium-cards.css](https://kanbantool.com/scripts/fixed-cards-height/medium-cards.css)
 [Large cards](large-cards.css) | Cards which can hold three lines of text. | [/scripts/fixed-cards-height/large-cards.css](https://kanbantool.com/scripts/fixed-cards-height/large-cards.css)
 [XL cards](xlarge-cards.css) | Cards which can hold four lines of text. | [/scripts/fixed-cards-height/xlarge-cards.css](https://kanbantool.com/scripts/fixed-cards-height/xlarge-cards.css)
-[Helper script](fixed-cards-height.js) | For better results use this script | [/scripts/fixed-cards-height/fixed-cards-height.js](https://kanbantool.com/scripts/fixed-cards-height/fixed-cards-height.js)
-
 
 ![preview](preview.png)

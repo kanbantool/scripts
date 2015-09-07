@@ -1,10 +1,10 @@
 (function() {
   var rotateTask;
 
-  rotateTask = function(task) {
+  rotateTask = function(taskElement) {
     var rd;
-    rd = ((task.model.attributes.board_version + task.model.attributes.id) % 7) - 3;
-    task.$el.css({
+    rd = ((taskElement.props.task.get('board_version') + taskElement.props.task.get('id')) % 7) - 3;
+    taskElement.kt.$el.css({
       '-webkit-transform': 'rotate(' + rd + 'deg)',
       '-moz-transform': 'rotate(' + rd + 'deg)',
       '-ms-transform': 'rotate(' + rd + 'deg)',
@@ -12,7 +12,7 @@
       'transform': 'rotate(' + rd + 'deg)'
     });
     rd = -1 * rd;
-    return task.$el.find('.task_name').css({
+    return taskElement.kt.$el.find('.kt-task-body').css({
       '-webkit-transform': 'rotate(' + rd + 'deg)',
       '-moz-transform': 'rotate(' + rd + 'deg)',
       '-ms-transform': 'rotate(' + rd + 'deg)',
@@ -21,10 +21,15 @@
     });
   };
 
-  window.board.on('task:render', rotateTask);
+  $(window).on('kt-task:render', function(e) {
+    return rotateTask(e.target);
+  });
 
-  setTimeout(function() {
-    return window.board.tasks.each(rotateTask);
-  }, 750);
-
+  KT.onInit(function() {
+    return setTimeout(function() {
+      return $('kt-task').each(function() {
+        return rotateTask(this);
+      });
+    }, 750);
+  });
 }).call(this);

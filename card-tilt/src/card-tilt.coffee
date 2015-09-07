@@ -1,8 +1,8 @@
-rotateTask = (task) ->
+rotateTask = (taskElement) ->
   # Rotate somewhere between -4deg and 4deg
-  rd = ((task.model.attributes.board_version + task.model.attributes.id) % 7) - 3
+  rd = ((taskElement.props.task.get('board_version') + taskElement.props.task.get('id')) % 7) - 3
 
-  task.$el.css(
+  taskElement.kt.$el.css(
     '-webkit-transform': 'rotate('+rd+'deg)'
     '-moz-transform': 'rotate('+rd+'deg)'
     '-ms-transform': 'rotate('+rd+'deg)'
@@ -12,7 +12,7 @@ rotateTask = (task) ->
 
   rd = -1 * rd
 
-  task.$el.find('.task_name').css(
+  taskElement.kt.$el.find('.kt-task-body').css(
     '-webkit-transform': 'rotate('+rd+'deg)'
     '-moz-transform': 'rotate('+rd+'deg)'
     '-ms-transform': 'rotate('+rd+'deg)'
@@ -20,8 +20,9 @@ rotateTask = (task) ->
     'transform': 'rotate('+rd+'deg)'
   )
 
-window.board.on 'task:render', rotateTask
+$(window).on 'kt-task:render', (e) -> rotateTask(e.target)
 
-setTimeout ->
-  window.board.tasks.each rotateTask
-, 750
+KT.onInit ->
+  setTimeout ->
+    $('kt-task').each -> rotateTask(@)
+  , 750

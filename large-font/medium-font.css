@@ -1,3 +1,3 @@
-body#show.boards #content table#board td ul.task_list li div.task_pane .task_name {
-  font-size:12px; line-height:15px;
+kt-task .kt-task-body {
+  font-size:12px !important;
 }
