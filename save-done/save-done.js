@@ -1,6 +1,6 @@
 KT.Elements.Taskview.footer.push({
   __: 'save-done',
-  filter: function(task) {
+  filter: function(el,task) {
     var ref;
     return task.id && ((ref = task.workflowStage()) != null ? ref.next() : void 0);
   },

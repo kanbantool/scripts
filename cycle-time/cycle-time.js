@@ -7,7 +7,7 @@
 
     KT.Elements.Task.header.unshift({
       __: 'CTime',
-      html: function(task, cardTemplate) {
+      html: function(el, task) {
         return "<span class=\"cycle_time\">" + (moment(task.attributes.created_at).fromNow()) + "</span>";
       }
     });
