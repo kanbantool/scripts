@@ -1,1 +1,1 @@
-kt-task { min-height:89px; }
+kt-task { min-height:89px; height:89px; max-height:89px; overflow:hidden; }
