@@ -1,2 +1,2 @@
 kt-task { min-height:73px; height:73px; max-height:73px; overflow:hidden; }
-
+.kt-task_body, .kt-task-body { min-height:48px; height:48px; max-height:48px; overflow:hidden; }
