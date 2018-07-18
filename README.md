@@ -13,6 +13,7 @@ Please select scripts from the table below, and copy-paste the URLs.
 
 Name | Description | Configuration | `___ Copy links from this column ___`
 --- | --- | --- | ---
+[Swimlane Auto-Assign](swimlane-auto-assign/) | Automatically assign tasks to team members basing on the swimlane's name.| Swimlane name needs to include team member's name. | [/scripts/swimlane-auto-assign/swimlane-auto-assign.js](/scripts/swimlane-auto-assign/swimlane-auto-assign.js)
 [High contrast](high-contrast/) | White-on-Black boards. Useful for TV screens. | Needs to be enabled from the tools menu | [/scripts/high-contrast/high-contrast.js](/scripts/high-contrast/high-contrast.js)
 [Large font](large-font/) | Makes the font on cards slightly larger. | No configuration required. | Medium font:<br/>[/scripts/large-font/medium-font.css](/scripts/large-font/medium-font.css) <br/> Large font:<br/> [/scripts/large-font/large-font.css](/scripts/large-font/large-font.css)
 [Card tilt](card-tilt/) | More natural alignment of cards. | No configuration required. | [/scripts/card-tilt/card-tilt.js](/scripts/card-tilt/card-tilt.js)
