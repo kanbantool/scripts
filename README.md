@@ -26,3 +26,4 @@ Name | Description | Configuration | `___ Copy links from this column ___`
 [Cycle time](cycle-time/) | Display time elapsed from when task was created. | No configuration required. | [/scripts/cycle-time/cycle-time.js](/working-time/working-time.js)
 [Kanbanira](kanbanira/) | Basic integration with JIRA. | Needs information about JIRA project, see [README](/kanbanira/README.md) | [/scripts/kanbanira/kanbanira.js](/kanbanira/kanbanira.js)
 [Order highlight](order-highlight/) | Highlight columns where card order does not match priorities. | No configuration required. | [/scripts/order-highlight/order-highlight.js](/order-highlight/order-highlight.js)
+[User avatars](user-avatars/) | Adds support for avatar images. | Script needs to be manually modified, by listing avatar image URL for each of user's initials. |
