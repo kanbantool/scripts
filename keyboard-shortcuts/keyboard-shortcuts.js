@@ -1,11 +1,30 @@
 document.onkeyup = function(e) {
-  // press a to show/hide board switcher
-  if(e.keyCode == 65) {
-    if ($(e.target).is('input, textarea, select')) return;
-      if ($("#kt-board-switcher").is(":visible")) {
-        $("#kt-board-switcher").hide();
+  if ($(e.target).is('input, textarea, select')) return;
+  if(e.keyCode == 66) {
+      // b = board switcher
+      var id = "#kt-board-switcher";
+      if ($(id).is(":visible")) {
+        $(id).hide();
       } else {
-        $("#kt-board-switcher").show();
-    }; 
+        $(id).show();
+     }; 
+  };
+  if(e.keyCode == 84) {
+      // t = tools menu
+      var id = "#tools_menu";
+      // alert($(id).hasClass("on"));
+      if ($(id).hasClass("on")) {
+        $(id).removeClass("on");
+      } else {
+        $(id).addClass("on");
+      };
+  }
+  if(e.keyCode == 72) {
+    // h = home
+  }
+  if(e.keyCode == 83) {
+    // s = settings
   }
 }
+
+
