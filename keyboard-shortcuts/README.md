@@ -7,3 +7,5 @@ The keyboard shortcuts are:
 * t to reveal the tools menu
 * s to navigate to settings
 * h to navigate 'home' (all boards)
+
+The idea behind adding these keyboard shortcuts is that they reduce 'pointer travel' - while it's not quite possible to select a board to switch just with keyboard shortcuts, the keyboard shortcut allows you to open the boards menu and select the new board with the pointer. 
