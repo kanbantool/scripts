@@ -1,5 +1,6 @@
 document.onkeyup = function(e) {
   if ($(e.target).is('input, textarea, select')) return;
+  if (e.shiftKey || e.altKey || e.ctrlKey || e.metaKey) return;
   if(e.keyCode == 66) {
       // b = board switcher
       var id = "#kt-board-switcher";
@@ -33,4 +34,32 @@ document.onkeyup = function(e) {
     var settings = x[0];
     window.location.href = settings;
   }
+  if(e.keyCode >= 49 && e.keyCode <= 57) {
+      // 49 to 47 to open first 9 boards in board switcher
+      var link = getBoard(e.keyCode-49);
+      if (link) window.location.href;
+  };
+  if(e.keyCode == 48) {
+      alert("opening all boards");
+      openBoards();
+  };
 }
+
+function getBoard(i) {
+  var id = "#kt-board-switcher a";
+  var links = [];
+  $(id).each(function() {
+     links.push( this.href ); 
+    });
+  return links[i];
+}
+
+function openBoards() {
+  var id = "#kt-board-switcher a";
+  $(id).each(function() {
+     window.open(this.href, '_blank');
+  });
+}
+
+
+
