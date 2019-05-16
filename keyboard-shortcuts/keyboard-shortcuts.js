@@ -37,7 +37,7 @@ document.onkeyup = function(e) {
   if(e.keyCode >= 49 && e.keyCode <= 57) {
       // 49 to 47 to open first 9 boards in board switcher
       var link = getBoard(e.keyCode-49);
-      if (link) window.location.href;
+      if (link) window.location.href=link;
   };
   if(e.keyCode == 48) {
       alert("opening all boards");
