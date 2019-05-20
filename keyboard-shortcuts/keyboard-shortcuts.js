@@ -1,5 +1,5 @@
 document.onkeyup = function(e) {
-  if ($(e.target).is('input, textarea, select')) return;
+  if ($(e.target).is('input, textarea, select, div')) return;
   if (e.shiftKey || e.altKey || e.ctrlKey || e.metaKey) return;
   if(e.keyCode == 66) {
       // b = board switcher
