@@ -24,6 +24,7 @@ Name | Description | Configuration | `___ Copy links from this column ___`
 [Save and done](save-done/) | Adds "Save and move to done" option to the card footer. | No configuration required. | [/scripts/save-done/save-done.js](/save-done/save-done.js)
 [Show all settings](show-all-settings/) | Shows all 'settings tabs' to the right of settings. | No configuration required. | [/scripts/show-all-settings/show-all-settings.js](/save-done/show-all-settings.js)
 [Task done](task-done/) | Adds "Task done" option to the context menu | No configuration required. | [/scripts/task-done/task-done.js](/task-done/task-done.js)
+[Keyboard shortcuts](keyboard-shortcuts/) | Adds keyboard shortcuts to reveal boards and tools menus, as well as navigate 'home' and to settings. | No configuration required. | [/scripts/keyboard-shortcutse/keyboard-shortcuts.js](/keyboard-shortcuts/keyboard-shortcuts.js)
 [Change column](change-column/) | Adds change column option to the context menu. | No configuration required. | [/scripts/change-column/change-column.js](/change-column/change-column.js)
 [Cycle time](cycle-time/) | Display time elapsed from when task was created. | No configuration required. | [/scripts/cycle-time/cycle-time.js](/working-time/working-time.js)
 [Kanbanira](kanbanira/) | Basic integration with JIRA. | Needs information about JIRA project, see [README](/kanbanira/README.md) | [/scripts/kanbanira/kanbanira.js](/kanbanira/kanbanira.js)
