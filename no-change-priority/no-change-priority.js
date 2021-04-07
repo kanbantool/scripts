@@ -1,0 +1,1 @@
+KT.Elements.Task.contextMenu.remove('elements.task.menu.change_priority');
