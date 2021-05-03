@@ -2,7 +2,6 @@ var x = document.getElementsByClassName("_board_settings_link");
 if (x) {
   var settings = x[0];
   var url = settings.href;
-  url = url.replace("settings","");
   addSetting("automation_rules","A");
   addSetting("powerups","P");
   addSetting("workflow","W");
@@ -15,6 +14,7 @@ function addSetting(ext,letter) {
   el.innerHTML = letter;
   el.classList.add('kt-right-pane-element');
   el.classList.add('_board_settings_link');
-  el.href = url + ext;
+  el.rel = "iframe-modal";
+  el.href = url.replace("settings",ext);
   settings.parentNode.insertBefore(el, settings.nextSibling);
 };
