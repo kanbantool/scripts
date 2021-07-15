@@ -10,7 +10,7 @@ window.KT.Elements.Task.contextMenu.push({
       stage = ref[i];
       opts.push({
         id: stage.id,
-        html: _.escape(stage.get('name')),
+        html: _.escape(stage.get('full_name')),
         action: (function() {
           return selection.groupUpdate({
             'workflow_stage_id': this.id,
