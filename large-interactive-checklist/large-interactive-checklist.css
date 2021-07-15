@@ -1,1 +1,2 @@
 .kt-interactive_checklists-checklist li label {font-size:13px !important;}
+.kt-interactive_checklists-checklist li label {font-size:calc(13px * var(--kt-board--zoom,1)) !important;}

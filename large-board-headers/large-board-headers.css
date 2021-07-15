@@ -1,1 +1,4 @@
-kt-board thead, kt-board tbody {font-size: 17px !important;}
+kt-board > thead > tr > th, kt-board > tbody > tr > th {
+    font-size: 17px;
+    font-size: calc(17px * var(--kt-board--zoom));
+}

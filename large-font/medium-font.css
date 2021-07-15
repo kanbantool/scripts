@@ -1,3 +1,4 @@
 kt-task .kt-task-body {
   font-size:12px !important;
+  font-size: calc(12px * var(--kt-board--zoom,1)) !important;
 }
