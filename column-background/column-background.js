@@ -35,6 +35,6 @@ for(var [key, value] of Object.entries(swimlaneSettings || {}) ) {
 
   if (sw) {
     var swId = sw.id;
-    $('kt-board > tbody > tr[data-swimlane-id=' + swId + ']').attr('style', 'background:' + ALLOWED_COLORS[value] + ' !important');
+    $('kt-board > tbody > tr[data-swimlane-id=' + swId + '] > td[data-stage-id]').attr('style', 'background:' + ALLOWED_COLORS[value] + ' !important');
   }
 }
