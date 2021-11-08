@@ -1,6 +1,6 @@
 var color = 'rgba(0, 0, 255, 1)';
 
-hoverFunction = function(el) {
+var hoverFunction = function(el) {
    var $ktTask = $(el.target).closest('kt-task');         
    var dependentTasks = ($ktTask[0].kt.props.task.dependencies() || []);
 
@@ -14,7 +14,7 @@ hoverFunction = function(el) {
    });
 }
 
-unhoverFunction = function(el) {
+var unhoverFunction = function(el) {
    var $ktTask = $(el.target).closest('kt-task');
    $ktTask.css('box-shadow', '');
    var dependentTasks = ($ktTask[0].kt.props.task.dependencies() || []);
