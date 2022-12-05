@@ -4,4 +4,4 @@ Adds checklist progressbar to task view.
 # Overview
 Add progress bar to visualize checklist items completion progress.
 
-![preview](preview.png)
+![preview](preview-image.png)
