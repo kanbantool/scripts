@@ -1,15 +1,7 @@
-makebar = (kde) ->
-  title = $(kde).find('.checklist-indicator').attr('title')
-  if title != undefined
-    n = title.indexOf('%')
-    prc = title.substr(0, n)
-    $(kde).find('.kt-task-footer').find('hr').remove()
-    $(kde).find('.kt-task-footer').prepend '<hr style="width:' + prc + '%; height:5px; background:#fff;">'
-
-$('kt-task').each ->
-  makebar(this)
-
-KT.onInit ->
-  setTimeout ->
-    $('kt-task').each -> makebar(@)
-  , 750
+KT.Elements.Taskview.footer.push({
+  __: 'checklist-progress'
+  filter: (el, task) -> parseInt(task.get('subtasks_count')) > 0
+  html: (el, task) -> 
+    prc = parseInt(100 * parseFloat(task.get('subtasks_completed_count')) / parseFloat(task.get('subtasks_count')))
+    "<hr style=\"width:"+prc+"%; height:5px; background:#fff;\">"
+})
